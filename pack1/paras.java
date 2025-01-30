@@ -1,5 +1,6 @@
 package pack1;
 
+
 import other.A;
 
 public class paras {
@@ -17,9 +18,4 @@ public class paras {
         System.out.println(p1.defaultVariable);
     }
 }
-class C extends A{
-    public static void main(String[] args) {
-        C c=new C();
-        c.show1();
-    }
-}
+

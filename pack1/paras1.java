@@ -6,7 +6,7 @@ public class paras1 {
     String defaultVariable="default variable";
     protected String protectedVariable="protected variable";
 
-     void PublicMethod(){
+     public void PublicMethod(){
         System.out.println("public method");
     }
     private void PrivateMethod(){
@@ -34,4 +34,5 @@ public class paras1 {
 
 
 }
+
 

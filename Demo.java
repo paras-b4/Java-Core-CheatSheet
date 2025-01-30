@@ -91,7 +91,7 @@ class Demo{
         int c= 256;
         float f1= 9.8f;
         byte b= (byte)a; //explicit it is done by the compiler automatically .
-        double d=a; //implicit it is done by the user manually .
+        double d=a; // implicit it is done by the user manually .
         float f=c;
         int a1=(int)f1;
         System.out.println("the value of a1 : "+ a1 + ((Object)a1).getClass().getSimpleName());
@@ -144,7 +144,7 @@ class paras{
         String a=bf.readLine();
         System.out.println("enter your name ");
         String s=bf.readLine();
-        char c= s.charAt(0);
+        char c = s.charAt(0);
         double d=Integer.parseInt(a);
         int num=Integer.parseInt(a);
         System.out.println("your entered no is "+num);
@@ -513,7 +513,7 @@ class Demo{
 import java.util.Scanner;
 class Student{
     int rollno;
-    String name ;
+    String name;
     int marks;
     public Student(int rollno, String name, int marks) {
         this.rollno = rollno;
@@ -524,8 +524,6 @@ class Student{
     public String toString() {
         return "Student [rollno=" + rollno + ", name=" + name + ", marks=" + marks + "]";
     }
-    
-    
 }
 
 class Demo{
@@ -551,6 +549,7 @@ class Demo{
         System.out.println(students);
 
     }
+        
 }
 }
 
@@ -845,6 +844,7 @@ class Demo{
         System.out.println(d.getName()+" "+d.getCity()+" "+d.getAge());
         
     }
+        
 }
     
 
@@ -1437,9 +1437,10 @@ abstract class A{
 //
 // Enumeration in sort also called enum 
 // Enum serves the purpose of representing a group of named constant .
+// Enum is a special data type to define a collection of constant .
 
 enum Laptop{
-    Mackbook(2000), XPS(),Surface(1500),Thinkpad(1800);
+    Mackbook(2000),XPS(),Surface(1500),Thinkpad(1800);
 
     int price; // BY default final and static 
     private Laptop(){
@@ -1587,7 +1588,6 @@ class Demo{
         
     }
 }
-
 
 //  Custom Exception .
 class MyException extends Exception
@@ -1991,7 +1991,7 @@ class Demo{
     //     num.stream().forEach(n->System.out.println(n));
     //    System.out.println("final output : "+num1);
 
-   // Streams are consumable, meaning you can only use them once. After a terminal operation (e.g., forEach, reduce), the stream is closed, and any further operations on it will result in an IllegalStateException
+    // Streams are consumable, meaning you can only use them once. After a terminal operation (e.g., forEach, reduce), the stream is closed, and any further operations on it will result in an IllegalStateException
     Stream<Integer>s0=num.stream();
     Stream<Integer>s1=s0.filter(n->n%2==0);
     // Stream<Integer>s4=s1.filter(n->n>6);// we canot use any operation twice in stream .

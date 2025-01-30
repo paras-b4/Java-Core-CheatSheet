@@ -9,12 +9,27 @@
  -In every 6 month minor updates of java released  
  -Easy to read 
  -Maintainable 
- -Follow WORA (write once read anywhere) concept
+ -Follow WORA (write once run anywhere) concept
  -OOPs Language 
  -Multithreading 
  -has collection api
  -exception handling 
  -java is platform independent 
+    Java is called platform-independent because Java programs can run on any operating system (Windows, Linux, macOS, etc.) without modification. This is possible due to the "Write Once, Run Anywhere" (WORA) principle, achieved through the use of the Java Virtual Machine (JVM).
+
+    Explanation:
+    Compilation to Bytecode:
+        When a Java program is compiled, it is not converted into machine-specific code (like C/C++). Instead, it is compiled into an intermediate form called bytecode (.class files).
+        Bytecode is a set of instructions that can be executed by the JVM.
+    JVM for Platform Independence:
+        The JVM acts as an abstraction layer between the compiled Java code and the operating system.
+        Each platform (Windows, Linux, macOS) has its own JVM implementation, which translates the bytecode into machine-specific instructions.
+        As long as the correct JVM is installed, the same Java bytecode can run on any OS.
+    Example Workflow:
+        Write Java code (.java file).
+        Compile it using javac, producing a bytecode file (.class file).
+        Run the bytecode on any platform with a JVM using the java command.
+
  
  # JVM
  The JVM is a virtual machine that runs Java bytecode. It is responsible for interpreting and executing Java bytecode instructions,
@@ -32,7 +47,7 @@
  beacuse they think if you know core java that means you every thing .
 
  2.History of java
- -java language first realeased by son microsystem in 1995 .
+ -java language first realeased by sun microsystem in 1995 .
  -But after that oracle brought the sun microsystem .
 
  3 Variables 
@@ -58,6 +73,15 @@
  -NoN Primitive datatype are more complex and user defined datatype and more sophisticated structure ex:- string ,class,interface,Arrays
  non primitive datatype are also known as refrence type.
 
+ In Java, non-primitive data types (also known as reference data types) are types that do not store the actual data value directly in memory.
+ Instead, they store a reference (or address) to the memory location where the data is stored.
+ Characteristics of Non-Primitive Data Types:
+    1.defined by the programer 
+    2.can be null
+    3.size is not fixed 
+    4.store refrence 
+    5.used to work with object 
+
  5. what is literals ?
  -literal is a source code representation of a fixed value eg:- 20000l represent long type of integers , 20.5f represents float 
  
@@ -80,7 +104,7 @@
  -int num =0x138
  -literal in hexadecimal must start with 0x or 0X .
 
-
+ 
  6. what is type conversion and type casting ?
  -type conversion or type casting is the process of converting a value from one datatype to another datatype .
 
@@ -127,6 +151,8 @@
  -Insertion and deletion = in case of inserting an element into an array require moving each elements from its original location to the new available slot .
  -single data type = arrays are designed to store elements of the same type .
  -memory waste = if you allocate an array that is larger than needed.
+ -Limited Functionality
+ -Performance Issues with Large Data
  
  ques difference between size and length ?
  
