@@ -1537,29 +1537,83 @@ class disha implements Comparable<disha>{
        
     } 
 }
+   */ 
+// import java.io.IOException;
     
+// class disha{
+//     public static void main(String[] args) throws IOException {
+//     System.out.println("enter a no");
+//     int i=System.in.read();
+//     System.out.println(i);
+//     System.in.read();
+//     System.out.println("enter a char");
+//     System.in.read();
+    
+    
+//     int c=System.in.read();
+//     System.out.println(c);
+//     System.out.println("enter a char");
+//     System.in.read();
+    
+    
+//     int c1=System.in.read();
+//     System.out.println(c1);
+    
+// }
+//}
+
+
 import java.io.IOException;
-    
-class disha{
+import java.util.LinkedHashSet;
+import java.util.function.IntFunction;
+
+class Disha{
+
+    public void RemoveDuplicate(int arr[]){
+       LinkedHashSet<Integer> i=new LinkedHashSet<>();
+       for(int a:arr)
+       {
+        i.add(a);
+        
+       }
+       Integer arr1[]=i.toArray(new Integer[i.size()]);
+       System.out.println("array after removing elements");
+       for(int a:arr1)
+       {
+        System.out.print(a+" ");
+       }
+    }
+
+    public static void main(String[]args){
+        int arr[]={10,10,12,12,15,159,8,11,12};
+        Disha d=new Disha();
+        d.RemoveDuplicate(arr);
+    }
+
+}
+
+// System.in.read() reads a single byte (as an ASCII value) and returns an int.
+//If you enter a number (e.g., 5), it will read the ASCII value (53 for '5') instead of the actual integer.
+class disha1{
     public static void main(String[] args) throws IOException {
     System.out.println("enter a no");
     int i=System.in.read();
     System.out.println(i);
     System.in.read();
-    System.out.println("enter a char");
     System.in.read();
-    
-    
+    System.out.println("enter a char");
+   
     int c=System.in.read();
     System.out.println(c);
-    System.out.println("enter a char");
     System.in.read();
-    
-    
+    System.in.read();
+    System.out.println("enter a char");
     int c1=System.in.read();
     System.out.println(c1);
-    
+    System.in.read();
+     System.in.read();
+    System.out.println("enter a char");
+    int c2=System.in.read();
+    System.out.println(c2);
+    }
 }
-}
-*/
-
